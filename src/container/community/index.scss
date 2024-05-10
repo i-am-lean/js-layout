@@ -1,0 +1,52 @@
+@use '../../style' as s;
+
+@use '../../style/layout.scss';
+
+
+.tabs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+}
+
+.tab__button {
+	height: 30px;
+	width: 100%;
+	border-bottom: 2px solid #E6E6E6;
+}
+
+.active {
+	border-bottom: 3px solid #121212;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__description {
+		font-size: 14px;
+		font-weight: 200;
+		line-height: 21px;
+		letter-spacing: 0.05em;
+		text-align: left;
+	}
+
+	&__button {
+		background: #F46F17;
+		color: #fff;
+		border-radius: 10px;
+		padding: 16px;
+
+		transition: opacity 0.7s;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
