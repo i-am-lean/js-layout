@@ -24,6 +24,21 @@
 	flex-direction: column;
 	gap: 16px;
 
+	&__image {
+		display:flex;
+		position: static;
+		width: 100%;
+		max-width: 350px;
+		height: 160px;
+		overflow: hidden;
+		background-image: url('/img/for_social.png');
+		background-repeat: no-repeat;
+		justify-content: space-between;
+		// align-items: center;
+		
+		
+	}
+
 	&__title {
 		font-size: 20px;
 	}

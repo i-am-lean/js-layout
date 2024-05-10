@@ -45,7 +45,7 @@ page.append(tabs)
 const createInfo = () => {
     const info = createElement ('div', 'info')
     const image = createElement('image', 'info__image' )
-    img.src = '/img/for_social.png'
+    image.src = '/img/for_social.png'
 
     const title = createElement(
         'h2',
